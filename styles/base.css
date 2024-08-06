@@ -1,0 +1,17 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+--background: #2D2E3E;
+--light-blue: #A8DCFA;
+--yellow: #FAF089;
+--red:#E53E3E;
+--cyan:#2AD5DC;
+--deep-yellow:#FCB900;
+--deep-blue:#90CDF4;
+--black:#1A202C;
+--white:#FFFFFFEB;
+}

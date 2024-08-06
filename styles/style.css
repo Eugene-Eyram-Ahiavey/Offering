@@ -1,0 +1,200 @@
+
+body{
+background-image: url(../images/Prophet_2-transformed.jpeg);
+background-position: center;
+background-size:cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+}
+/* main{
+height: 100vh;
+} */
+main .header{
+padding-top: 5rem;
+}
+.header h1, .header h3{
+text-align: center;
+}
+
+.header h1{
+color: var(--white);
+}
+
+.header h3{
+color: var(--cyan);
+}
+
+/* main section{
+} */
+
+section #offering-container{
+display: grid;
+/* border: 2px solid green; */
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows:1fr auto;
+/* grid-template-areas:
+"slide-one slide-two"
+"slide-one slide-two"
+"others" */
+height: 100%;
+gap: 15px;
+width:95%;
+margin:0 auto;
+/* margin: auto; */
+padding-top: 3rem;
+}
+
+#offering-container .slide-one{
+/* grid-area: slide-one;
+border: 2px solid brown; */
+grid-column: 1/2;
+/* border: 2px solid blue; */
+grid-row: 1/2;
+}
+
+#offering-container .slide-two{
+/* grid-area: slide-two;
+border: 2px solid tomato; */
+grid-column: 2/3;
+/* border: 2px solid red; */
+grid-row: 1/2;
+}
+
+
+
+#offering-container .slide-one .ghana,
+.slide-two .kenya{
+/* border: 2px solid black; */
+height: 5rem;
+width: 100%;
+display: flex;
+align-items: center;
+padding: 1.2rem;
+border-radius: 15px;
+background-color: var(--background);
+color: var(--white);
+}
+
+
+#offering-container .slide-one .ghana .flag,
+.slide-two .kenya .flag{
+width: 50px;
+height: 50px;
+}
+
+#offering-container .slide-one .ghana .flag img,
+.slide-two .kenya .flag img{
+width: 100%;
+height: 100%;
+}
+
+#offering-container .slide-one .ghana h3,
+.slide-two .kenya h3{
+margin-left: 0.5rem;
+}
+
+#offering-container .slide-one .uk,
+.slide-two .usa{
+/* border: 2px solid black; */
+height: 5rem;
+display: flex;
+align-items: center;
+padding: 1.2rem;
+margin-top: 1rem;
+border-radius: 15px;
+background-color:var(--background);
+color: var(--white);
+}
+
+#offering-container .slide-one .uk .flag,
+.slide-two .usa .flag{
+width: 50px;
+height: 50px;
+}
+
+#offering-container .slide-one .uk .flag img,
+.slide-two .usa .flag img{
+width: 100%;
+height: 100%;
+}
+
+#offering-container .slide-one .uk h3,
+.slide-two .usa h3{
+margin-left: 0.5rem;
+}
+
+#offering-container .slide-one .switz,
+.slide-two .australia{
+/* border: 2px solid black; */
+height: 5rem;
+display: flex;
+align-items: center;
+padding: 1.2rem;
+margin-top: 1rem;
+border-radius: 15px;
+background-color: var(--background);
+color:var(--white);
+}
+
+#offering-container .slide-one .switz .flag,
+.slide-two .australia .flag{
+width: 50px;
+height: 50px;
+}
+
+#offering-container .slide-one .switz .flag img,
+.slide-two .flag img{
+width: 100%;
+height: 100%;
+}
+
+#offering-container .slide-one .switz h3,
+.slide-two .australia h3{
+margin-left: 0.5rem;
+}
+
+#offering-container .others{
+/* grid-area: others;
+border:2px solid cyan; */
+grid-column: 1/-1;
+/* border: 2px solid violet; */
+grid-row: 2/3;
+border-radius: 15px;
+background-color:var(--background);
+}
+
+#offering-container .others .flag{
+width: 80px;
+height: 80px;
+}
+#offering-container .others .flag img{
+width: 100%;
+height: 100%;
+}
+#offering-container .others .min-cont{
+display: flex;
+align-items: center;
+padding-left: 2rem;
+background-color: var(--background);
+border-radius: 15px;
+}
+
+#offering-container .others h3{
+margin-left: 0.5rem;
+white-space: nowrap;
+color: var(--white);
+}
+
+section .last{
+text-align: center;
+padding-top:5rem;
+color: var(--cyan);
+}
+
+
+@media screen and (max-width:400px){
+#offering-container{
+min-width: 90%;
+margin: 0 auto;
+}
+}
