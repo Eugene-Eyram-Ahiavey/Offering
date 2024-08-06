@@ -1,11 +1,14 @@
 
 body{
-background-image: url(../images/Prophet_2-transformed.jpeg);
+background-image: url(../images/Prophet-transformed.jpeg);
 background-position: center;
 background-size:cover;
 background-repeat: no-repeat;
-min-height: 100vh;
+background-color:var(--black);
+background-blend-mode: overlay;
+/* max-height: 100vh; */
 }
+
 /* main{
 height: 100vh;
 } */
@@ -36,7 +39,6 @@ grid-template-rows:1fr auto;
 "slide-one slide-two"
 "slide-one slide-two"
 "others" */
-height: 100%;
 gap: 15px;
 width:95%;
 margin:0 auto;
@@ -194,7 +196,6 @@ color: var(--cyan);
 
 @media screen and (max-width:400px){
 #offering-container{
-min-width: 90%;
-margin: 0 auto;
+height: 100%;
 }
 }
